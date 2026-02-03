@@ -1,0 +1,166 @@
+{
+	// Place your ISPC26 ワークスペース snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"top-title": {
+		"scope": "markdown",
+		"prefix": "top-title",
+		"body": [
+		  "---",
+		  "layout: top-title",
+		  "color: amber-light",
+		  "---",
+		  "",
+		  "::title::",
+		  "",
+		  "::content::",
+		  "$0"
+		],
+		"description": "Slidev top-title レイアウト（amber-light）"
+	},
+	"topic-box": {
+		"scope": "markdown",
+		"prefix": "topic-box",
+		"body": [
+		  "<div class=\"topic-box\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Topic Box（オレンジ）"
+	},
+	"theorem": {
+		"scope": "markdown",
+		"prefix": "theorem",
+		"body": [
+		  "<div class=\"theorem\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Theorem（赤）"
+	},
+	"definition": {
+		"scope": "markdown",
+		"prefix": "definition",
+		"body": [
+		  "<div class=\"definition\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Definition（青）"
+	},
+	"lemma": {
+		"scope": "markdown",
+		"prefix": "lemma",
+		"body": [
+		  "<div class=\"lemma\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Lemma（緑）"
+	},
+	"corollary": {
+		"scope": "markdown",
+		"prefix": "corollary",
+		"body": [
+		  "<div class=\"corollary\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Corollary（紫）"
+	},
+	"proposition": {
+		"scope": "markdown",
+		"prefix": "proposition",
+		"body": [
+		  "<div class=\"proposition\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Proposition（オレンジ）"
+	},
+	"remark": {
+		"scope": "markdown",
+		"prefix": "remark",
+		"body": [
+		  "<div class=\"remark\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Remark（グレー・🧐）"
+	},
+	"question": {
+		"scope": "markdown",
+		"prefix": "question",
+		"body": [
+		  "<div class=\"question\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Question（紫）"
+	},
+	"reference": {
+		"scope": "markdown",
+		"prefix": "reference",
+		"body": [
+		  "<div class=\"reference\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: Reference（グレー・📚）"
+	},
+	"example": {
+		"scope": "markdown",
+		"prefix": "example",
+		"body": [
+		  "<div class=\"example\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: 例（ティール・💡）"
+	},
+	"claim": {
+		"scope": "markdown",
+		"prefix": "claim",
+		"body": [
+		  "<div class=\"claim\">",
+		  "",
+		  "$0",
+		  "",
+		  "</div>"
+		],
+		"description": "コールアウト: 主張（オレンジ・🔎）"
+	}
+}
