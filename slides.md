@@ -228,12 +228,13 @@ $\theta=2/3$のとき、単に「解く」という。
 
 </div>
 
+<v-clicks>
+
 - $k=\Omega(\sqrt{n\log n})$なら[次数を見れば](https://nobutakashimizu.github.io/nobunote/docs/planted_clique/Kucera%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0/)解ける 
 <a class="cite-reference" href="https://www.sciencedirect.com/science/article/pii/0166218X9400103K?via%3Dihub">\[Kučera (1995)]</a>
 
 - $k=\Omega(\sqrt{n})$なら[固有ベクトルに基づく手法](https://nobutakashimizu.github.io/nobunote/docs/planted_clique/AKS%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0/)で解ける <a class="cite-reference" href="https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1098-2418(199810/12)13:3/4%3C457::AID-RSA14%3E3.0.CO;2-W">Alon, Kurivelevich, Sudakov (1998)</a>
   - 高速化 <a class="cite-reference" href="https://dmtcs.episciences.org/2802">\[Feige, Ron (2010)]</a> や成功確率の改善 <a class="cite-reference" href="https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/finding-hidden-cliques-in-linear-time-with-high-probability/88A05D6B07878D54E62433DA72190623">\[Dekel, Gurel-Gurevich, Peres (2014)]</a>
-
 
 
 <div class="topic-box">
@@ -242,6 +243,7 @@ $\theta=2/3$のとき、単に「解く」という。
 
 </div>
 
+</v-clicks>
 
 ---
 layout: top-title
@@ -266,7 +268,7 @@ color: amber-light
 
 - 判定するアルゴリズムは$G$を受け取って$0$または$1$を出力
 
-<div class="definition">
+<div class="definition" v-click>
 
 アルゴリズム$A$は**アドバンテージ$\theta$で判定する**とは、
 
@@ -316,11 +318,15 @@ color: amber-light
 - $2\log_2 n \ll k \ll \sqrt{n}$は最尤推定で解けるが効率的に解けなさそう
   - **統計限界と計算限界のギャップ (computational-statistical gap)** という
 
+<v-click>
+
 - 様々なタイプのアルゴリズムに対して、$k=n^{1/2-\varepsilon}$は不可能である
   - Metropolis process <a class="cite-reference" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rsa.3240030402">\[Jerrum (1992)]</a><a class="cite-reference" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rsa.21274">\[Chen, Mossel, Zadik (2023)]</a>
   - Lovász-Schrijver semidefinite hierarchy <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/S009753970240118X">\[Feige, Krauthgamer (2023)]</a>
   - statistical query model <a class="cite-reference" href="https://dl.acm.org/doi/10.1145/3046674">\[Feldman, Grigorescu, Reyzin, Vempala, Xiao (2017)]</a>
   - low-degree polynomials <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/17M1138236">\[Barak, Hopkins, Kelner, Kothari, Moitra, Potechin (2019)]</a>
+
+</v-click>
 
 ---
 layout: top-title
@@ -339,6 +345,8 @@ color: amber-light
 
 </div>
 
+<v-clicks>
+
 - 圧縮センシング <a class="cite-reference" href="https://ieeexplore.ieee.org/document/6837515">\[Koiran, Zouzias (2014)]</a>
 - 最密部分グラフ問題 <a class="cite-reference" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2021.10">\[Manurangsi, Rubinstein, Schramm (2021)]</a>
 - 主成分分析 <a class="cite-reference" href="https://proceedings.mlr.press/v30/Berthet13.html">\[Berthet, Rigollet (2013)]</a><a class="cite-reference" href="https://proceedings.mlr.press/v75/brennan18a.html">\[Brennan, Bresler, Huleihel (2018)]</a>
@@ -346,6 +354,8 @@ color: amber-light
 - コミュニティ検出 <a class="cite-reference" href="https://proceedings.mlr.press/v40/Hajek15.html">\[Hajek, Wu, Xu (2015)]</a>
 - 暗号学的プリミティブ <a class="cite-reference" href="https://link.springer.com/article/10.1023/A:1008374125234">\[Juel, Peinado (2000)]</a><a class="cite-reference" href="https://dl.acm.org/doi/10.1145/1806689.1806715">\[Applebaum, Barak, Wigderson (2010)]</a>
 - 性質検査 <a class="cite-reference" href="https://dl.acm.org/doi/10.1145/1250790.1250863">\[Alon, Andoni, Kaufman, Matulef, Rubinfeld, Xie (2007)]</a>
+
+</v-clicks>
 
 ---
 layout: top-title
@@ -461,11 +471,16 @@ color: amber-light
 </div>
 
 
-- 文献によって、埋め込みクリーク問題の困難性仮定は異なる
+- 文献によって、埋め込みクリーク問題の設定が異なる
   - $\forall$多項式時間アルゴリズムは**探索**問題の成功確率が **$1/3$** 以下
   - $\forall$多項式時間アルゴリズムは**判定**問題のアドバンテージが **$o(1)$**
-- 文脈によって、**考える問題**や**仮定する成功確率やアドバンテージの限界値**はまちまち
-  - 我々の動機：これを統一化できないか？
+
+<div class="topic-box" v-click>
+
+我々の動機：これを統一化できないか？
+
+</div>
+
 
 
 ---
@@ -493,9 +508,9 @@ color: amber-light
 
 - $k$の値が少しだけ変えるだけで、成功確率を劇的に増幅できる
 
-<div class="corollary">
+<div class="corollary" v-click>
 
-成功確率は **$1/\mathrm{poly}(n)$** から **$1-\exp(-\mathrm{poly}(n))$** の間のどの値に設定しても探索問題に対する「埋め込みクリーク予想」は同値
+成功確率は **$1/\mathrm{poly}(n)$** から **$1-\exp(-\mathrm{poly}(n))$** の間のどの値に設定しても**探索問題**に対する「埋め込みクリーク予想」は同値
 
 </div>
 
@@ -520,41 +535,19 @@ $\Downarrow$
 
 </div>
 
+<v-clicks>
+
 - $\PC(n,k)$ と $\ER(n)$ は、**辺を数えれば**アドバンテージ **$\Omega(\frac{k^2}{n})$** で判定できる
   - $\ER(n)$の辺の本数 $= \frac{1}{2}\binom{n}{2} \underbrace{\pm O(n)}_{\text{標準偏差}}$
   - $\PC(n,k)$の辺の本数 $= \frac{1}{2}\binom{n}{2} + \Theta(k^2) \pm O(n)$
 
 - 我々の結果：辺数え上げより**ちょっと良いアドバンテージ**が出せれば、クリークを見つけられる
   
-<v-click>
-
 - (厳密には$\PC(n,k)$とはちょっと異なるグラフを考えている)
 
-</v-click>
-
----
-layout: top-title
-color: amber-light
----
-
-::title::
-
-# 証明のコア
-
-::content::
-
-<img src="./images/reduction.svg" alt="reduction" class="w-[95%] max-w-5xl mx-auto h-auto" />
-
-<div class="topic-box">
-
-与えられたグラフを $G\sim\PC(n,n^{1/2-\alpha})$ とする。
-
-1. ランダムに $n^{1-\varepsilon}$ 頂点からなる頂点部分集合を選び、**誘導部分グラフ**をとる。このグラフを$H$とする (shrinking)
-
-2. $\ER(n^{1-\varepsilon}\log n)$ を用意し、ランダムな場所に$H$を**埋め込む**。このグラフを $G'$ とする (embedding)
+</v-clicks>
 
 
-</div>
 
 ---
 layout: top-title
@@ -572,9 +565,14 @@ color: amber-light
 <div class="topic-box">
 
 1. 成功確率$1/\mathrm{poly}(n)$ のアルゴリズムを$A$とし、入力を $G\sim\PC(n,n^{1/2-\alpha})$ とする。
-2. ランダムに $n'=n^{1-\varepsilon}$ 個の頂点を選び、その集合からなる誘導部分グラフ $H$ をとる
+
+<v-clicks>
+
+2. ランダムに $n'=n^{1-\varepsilon}$ 個の頂点を選び、その集合からなる <strong> 誘導部分グラフ $H$ </strong> をとる
 3. $A(H)$ が$H$内のクリークを見つけたら、そこから$G$のクリークを復元する
 4. ステップ2-3を $\mathrm{poly}(n)$ 回繰り返す
+
+</v-clicks>
 
 </div>
 
@@ -602,7 +600,7 @@ color: amber-light
 - 直感：1回の成功確率が$1/n^c$なら、$n^c$回実行すれば、期待値的には$1$回は成功する
 - それぞれの試行は独立ではないが、この直感はある程度は正当化できる
 
-<div class="topic-box">
+<div class="topic-box" v-click>
 
 - 残念ながら、これだけだと（現状の解析では）成功確率をもっと上げることはできない
 - そこで、別の帰着が必要
@@ -626,9 +624,14 @@ color: amber-light
 <div class="topic-box">
 
 1. 成功確率$2/3$ のアルゴリズムを$A$とし、入力を $G\sim\PC(N,\ell)$ とする。
+
+<v-clicks>
+
 2. $\ER(O(N\log N))$を用意し、このグラフにランダムに$G$を埋め込んで得られるグラフを$G'$とする
 3. $A(G')$ がクリークを見つけたら、そこから$G$のクリークを復元する
 4. ステップ2-3を $\mathrm{poly}(n)$ 回繰り返す
+
+</v-clicks>
 
 </div>
 
@@ -673,13 +676,17 @@ color: amber-light
   <img src="./images/reduction.svg" alt="shrinking" class="w-[92%] max-w-5xl h-auto" />
 </div>
 
+<v-click>
+
 <div class="topic-box">
 
 左のグラフの成功確率 **$\le 1-1/\mathrm{poly}(n)$** $\Rightarrow$ 右のグラフの成功確率 **$\le \exp(-\mathrm{poly}(n))$**
 
+つまり、困難性が増幅している
+
 </div>
 
-- 困難性が増幅されている
+</v-click>
 
 ---
 layout: top-title
@@ -692,7 +699,7 @@ color: amber-light
 
 ::content::
 
-- <a class="cite-reference" href="https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1098-2418(199810/12)13:3/4%3C457::AID-RSA14%3E3.0.CO;2-W">Alon, Kurivelevich, Sudakov (1998)</a> の結果を使う
+- 探索から判定への帰着：<a class="cite-reference" href="https://dl.acm.org/doi/10.1145/1250790.1250863">\[Alon, Andoni, Kaufman, Matulef, Rubinfeld, Xie (2007)]</a> の結果を使う
 
 <div class="lemma">
 
@@ -722,7 +729,7 @@ color: amber-light
 - **埋め込みクリーク問題**：$2\log_2 n \ll k \ll \sqrt{n}$ に**統計限界と計算限界のギャップ**がある
 - 文献ごとに困難性仮定（成功確率・アドバンテージの限界）が異なる → **統一化**を目指した
 - **証明のコア**
-  - $\mathsf{Shrink}$ ... 頂点数を減らして成功確率を増幅
+  - $\mathsf{Shrink}$ ... 頂点数を減らして成功確率を増幅（クリークサイズがちょっと変わる）
   - $\mathsf{Embed}$ ... グラフを埋め込んで成功確率を増幅
 
 <div class="topic-box">
