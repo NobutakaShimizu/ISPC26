@@ -409,7 +409,7 @@ color: amber-light
 </thead>
 <tbody>
 <tr v-click>
-  <td>50s–60s</td>
+  <td>1950s〜1960s</td>
   <td>具体的なアルゴリズムのランダムな入力に対する挙動の解析<br>クイックソート<a class="cite-reference" href="https://dl.acm.org/doi/10.1145/366622.366644">[Hoare (1961)]</a>, 二分探索木<a class="cite-reference" href="https://dl.acm.org/doi/10.1145/321105.321108">[Hibbard (1962)]</a></td>
 </tr>
 <tr v-click>
@@ -421,12 +421,8 @@ color: amber-light
   <td>ランダムな入力上での計算量の議論の本格化<br>・ランダムな入力上でTSPや<strong>クリークの近似</strong>が解ける <a class="cite-reference" href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/1976/28848.html">[Karp (1976)]</a><br>・離散対数の困難性に基づく<strong>公開鍵暗号方式</strong> <a class="cite-reference" href="https://ieeexplore.ieee.org/document/1055638">[Diffie, Hellman (1976)]</a></td>
 </tr>
 <tr v-click>
-  <td>1983</td>
-  <td>平均時困難性の開拓<br>・暗号学的擬似乱数生成器への応用 <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/0213053">[Blum, Micali (1984)]</a><br>・<strong>平均時計算複量クラス</strong> <InlineMath formula="\mathsf{avgP}" />, <InlineMath formula="\mathsf{distNP}" /> <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/0215020">[Levin (1986)]</a></td>
-</tr>
-<tr v-click>
-  <td>1989</td>
-  <td>脱乱択化への応用 <a class="cite-reference" href="https://www.sciencedirect.com/science/article/pii/S0022000005800431?via%3Dihub">[Nisan, Wigderson (1994)]</a></td>
+  <td>1980s〜</td>
+  <td>平均時困難性の開拓<br>・暗号学的擬似乱数生成器への応用 <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/0213053">[Blum, Micali (1984)]</a><br>・<strong>平均時計算複量クラス</strong> <InlineMath formula="\mathsf{avgP}" />, <InlineMath formula="\mathsf{distNP}" /> <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/0215020">[Levin (1986)]</a><br>・脱乱択化への応用 <a class="cite-reference" href="https://www.sciencedirect.com/science/article/pii/S0022000005800431?via%3Dihub">[Nisan, Wigderson (1994)]</a></td>
 </tr>
 </tbody>
 </table>
