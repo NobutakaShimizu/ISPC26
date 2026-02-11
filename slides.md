@@ -458,9 +458,9 @@ color: amber-light
 - 高次元統計学
   - ノイズが乗った高次元データから構造を抽出
   - 多くは埋め込みクリークに帰着できる <a class="cite-reference" href="https://proceedings.mlr.press/v75/brennan18a.html">\[Brennan, Bresler, Huleihel (2018)]</a>
-- 制限されたクラスのアルゴリズムの限界
-  - low-degree polynomial <a class="cite-reference" href="https://projecteuclid.org/journals/annals-of-statistics/volume-50/issue-3/Computational-barriers-to-estimation-from-low-degree-polynomials/10.1214/22-AOS2179.full">\[Schramm, Wein (2022)]</a>
-- 最悪時と比べて性能はどうか？
+- 特定のクラスのアルゴリズムの理論的な限界
+- 最悪時との等価性 (**最悪時から平均時への帰着**)
+  - 行列パーマネント、行列積、部分グラフ数え上げ問題 
 
 ::right::
 
@@ -771,8 +771,8 @@ color: amber-light
 
 **メッセージ**
 
-- 平均時計算量は、暗号などへの応用といった文脈でも研究されている
-- しかし、この文脈では特定の問題に焦点は当てず、問題を変形して**困難性を増幅**している
-- 困難性増幅の手法が**埋め込みクリーク問題**に役立った
+- 平均時計算量などの文脈での平均時計算量は、問題を変形して**困難性を増幅**している
+  - 一般には変形された問題は元の問題とは異なる形になってしまう
+- 本研究：**埋め込みクリーク問題**に対しては **$k$の値をちょっと変える** だけで困難性増幅ができる！
 
 </div>
