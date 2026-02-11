@@ -300,14 +300,13 @@ color: amber-light
 
 - 任意の多項式時間アルゴリズムのアドバンテージが小さい $\Rightarrow$ **$\ER(n)$** と **$\PC(n,k)$** が識別できない
   - $\ER(n)$は $\binom{n}{2}$ ビットの**一様ランダム**な文字列 （シャノンエントロピーは **$\binom{n}{2}$ビット**）
-  - $\PC(n,k)$ のエントロピーは、$k\gg\log n$ ならより小さい
+  - $\PC(n,k)$ のエントロピーは、$k\ge (2+c)\log n$ なら、より小さくなる：
   $$
-    \underbrace{\binom{n}{2} - \binom{k}{2}}_{\text{クリーク以外の辺}} + \underbrace{(1-o(1))\cdot k \log_2 n}_{\text{クリークの位置情報}} \approx \binom{n}{2} - k^2 + k\log_2 n \ll \binom{n}{2}
+    \underbrace{\binom{n}{2} - \binom{k}{2}}_{\text{クリーク以外の辺}} + \underbrace{(1-o(1))\cdot k \log_2 n}_{\text{クリークの位置情報}} \approx \binom{n}{2} - \frac{k^2}{2} + k\log_2 n \ll \binom{n}{2}
   $$
 
 - エントロピーは違うけど、アルゴリズムにとっては識別できない
   - $\PC(n,k)$ は**擬似ランダム**である!
-  - **$\binom{n}{2}$ビット** のランダム文字列を、**$\binom{n}{2}-k^2+k\log_2 n$ ビット** のランダム文字列で代用できてしまう！
 
 </v-clicks>
 
