@@ -38,13 +38,13 @@ themeConfig:
 </div>
 <div>
 
-  <QRCode value="https://nobutakashimizu.github.io/stoc25_slide/" :size="120" render-as="svg"/>
+  <QRCode value="https://nobutakashimizu.github.io/ISPC26/1" :size="120" render-as="svg"/>
 
 <div class="text-center text-blue-500 text-sm">
 
-  $\uparrow$ [slide (github page)](https://nobutakashimizu.github.io/stoc25_slide/)
+  $\uparrow$ [slide (github page)](https://nobutakashimizu.github.io/ISPC26/1)
 
-  [STOC論文のリンク](https://dl.acm.org/doi/10.1145/3618260.3649751)
+  [論文のリンク](https://dl.acm.org/doi/10.1145/3618260.3649751)
 
 </div>
 </div>
