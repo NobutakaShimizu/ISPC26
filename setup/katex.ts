@@ -3,6 +3,9 @@
 export default function setup() {
     return {
       macros: {
+        '\\ER': '\\mathsf{ER}',
+        '\\NP': '\\mathsf{NP}',
+        '\\PC': '\\mathsf{PC}',
         '\\Real': '\\mathbb{R}',
         '\\Int': '\\mathbb{Z}',
         '\\Nat': '\\mathbb{N}',

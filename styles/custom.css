@@ -293,4 +293,113 @@
     color: #e65100;
     font-weight: bold;
     font-size: 0.95em;
-  } 
+  }
+
+  /* k の数直線（統計限界・計算限界・多項式時間） */
+  .k-numberline-wrap {
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .k-axis-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .k-axis-top {
+    margin-bottom: 0.25rem;
+  }
+  .k-axis-top .k-tick-label {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8em;
+    min-width: 0;
+  }
+  .k-numberline {
+    display: flex;
+    align-items: stretch;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #616161;
+  }
+  .k-seg {
+    flex: 1;
+    min-width: 0;
+  }
+  .k-seg + .k-seg {
+    border-left: 2px solid #424242;
+  }
+  .k-zone-stat {
+    background: linear-gradient(180deg, #ffcdd2 0%, #ef9a9a 100%);
+  }
+  .k-zone-comp {
+    background: linear-gradient(180deg, #ffecb3 0%, #ffe082 100%);
+  }
+  .k-zone-poly {
+    background: linear-gradient(180deg, #c8e6c9 0%, #a5d6a7 100%);
+  }
+  .k-axis-ticks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2px;
+  }
+  .k-axis-ticks .k-tick {
+    width: 2px;
+    height: 6px;
+    background: #424242;
+    border-radius: 1px;
+  }
+  .k-axis-bottom {
+    margin-top: 0.35rem;
+  }
+  .k-axis-bottom .k-desc {
+    flex: 1;
+    text-align: center;
+    font-size: 0.72em;
+    color: #424242;
+    line-height: 1.25;
+    min-width: 0;
+  }
+  .k-axis-bottom .k-desc:nth-child(1) { color: #b71c1c; }
+  .k-axis-bottom .k-desc:nth-child(2) { color: #e65100; }
+  .k-axis-bottom .k-desc:nth-child(3) { color: #1b5e20; }
+
+  /* 年表テーブル */
+  .timeline-table-wrap {
+    margin: 0.5rem 0;
+    font-size: 0.9em;
+  }
+  .timeline-table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #bdbdbd;
+  }
+  .timeline-table-wrap thead th,
+  .timeline-table-wrap tbody td {
+    border: 1px solid #e0e0e0;
+    padding: 0.5rem 0.5rem;
+    vertical-align: top;
+  }
+  .timeline-table-wrap thead th {
+    background-color: #e0e0e0 !important;
+    color: #212121;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 3.2em;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+  .timeline-table-wrap tbody td {
+    line-height: 1.65;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    background-color: #fff;
+  }
+  .timeline-table-wrap td br + .cite-reference { margin-left: 0; }

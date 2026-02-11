@@ -162,5 +162,13 @@
 		  "</div>"
 		],
 		"description": "コールアウト: 主張（オレンジ・🔎）"
+	},
+	"cite-reference": {
+		"scope": "markdown",
+		"prefix": "cite",
+		"body": [
+		  "<a class=\"cite-reference\" href=\"${1:URL}\">${2:表示テキスト}</a>$0"
+		],
+		"description": "引用リンク（cite-reference スタイル）"
 	}
 }
