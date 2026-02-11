@@ -352,7 +352,7 @@ color: amber-light
 
 - 様々なタイプのアルゴリズムに対して、$k=n^{1/2-\varepsilon}$は不可能である
   - Metropolis process <a class="cite-reference" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rsa.3240030402">\[Jerrum (1992)]</a><a class="cite-reference" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rsa.21274">\[Chen, Mossel, Zadik (2023)]</a>
-  - Lovász-Schrijver semidefinite hierarchy <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/S009753970240118X">\[Feige, Krauthgamer (2023)]</a>
+  - Lovász-Schrijver semidefinite hierarchy <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/S009753970240118X">\[Feige, Krauthgamer (2003)]</a>
   - statistical query model <a class="cite-reference" href="https://dl.acm.org/doi/10.1145/3046674">\[Feldman, Grigorescu, Reyzin, Vempala, Xiao (2017)]</a>
   - low-degree polynomials <a class="cite-reference" href="https://epubs.siam.org/doi/10.1137/17M1138236">\[Barak, Hopkins, Kelner, Kothari, Moitra, Potechin (2019)]</a>
 
