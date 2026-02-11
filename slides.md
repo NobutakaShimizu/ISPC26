@@ -457,10 +457,10 @@ color: amber-light
 
 - 高次元統計学
   - ノイズが乗った高次元データから構造を抽出
-  - 埋め込みクリークに帰着 <a class="cite-reference" href="https://proceedings.mlr.press/v75/brennan18a.html">\[Brennan, Bresler, Huleihel (2018)]</a>
+  - 多くは埋め込みクリークに帰着できる <a class="cite-reference" href="https://proceedings.mlr.press/v75/brennan18a.html">\[Brennan, Bresler, Huleihel (2018)]</a>
 - 制限されたクラスのアルゴリズムの限界
   - low-degree polynomial <a class="cite-reference" href="https://projecteuclid.org/journals/annals-of-statistics/volume-50/issue-3/Computational-barriers-to-estimation-from-low-degree-polynomials/10.1214/22-AOS2179.full">\[Schramm, Wein (2022)]</a>
-- 様々な問題を **定性的（解けるかどうか）** に評価
+- 最悪時と比べて性能はどうか？
 
 ::right::
 
@@ -470,7 +470,7 @@ color: amber-light
 
 <div class="topic-box">
 
-成功確率$o(1)$の問題を構成したい (**困難性増幅**)
+成功確率$o(1)$の問題を人工的に**構成したい**
 
 </div>
 
@@ -480,7 +480,7 @@ color: amber-light
   - 暗号学的プリミティブや脱乱択化への応用
     - 耐量子暗号
     - 公開鍵暗号方式
-  - 成功確率やアドバンテージを**定量的に**評価
+  - 成功確率をとにかく減らしたい（**困難性増幅**）
 
 </v-click>
 
@@ -502,17 +502,21 @@ color: amber-light
 </div>
 
 
-- 文献によって、埋め込みクリーク問題の設定が異なる
+- 文脈によって **「埋め込みクリーク予想」** の設定が異なる
   - $\forall$多項式時間アルゴリズムは**探索**問題の成功確率が **$1/3$** 以下
   - $\forall$多項式時間アルゴリズムは**判定**問題のアドバンテージが **$o(1)$**
 
 <div class="topic-box" v-click>
 
-我々の動機：これを統一化できないか？
+我々の動機：困難性増幅を使ってこれを **統一化** できないか？
 
 </div>
 
+<v-click>
 
+- 主結果：ほとんどの設定は **等価** である！
+
+</v-click>
 
 ---
 layout: top-title
