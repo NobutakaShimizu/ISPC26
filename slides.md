@@ -77,11 +77,6 @@ color: amber-light
   - PCP定理 (RIMSで[集中講義](https://nobutakashimizu.github.io/PCP_lecture_2025/main.pdf))
   - 離散時間のマルコフ連鎖 (mixing timeまわり)
 
-<div class="topic-box">
-
-複雑性クラスなどの抽象的な議論より、具体的な議論が好き
-
-</div>
 
 ---
 layout: top-title
@@ -94,7 +89,7 @@ color: amber-light
 
 ::content::
 
-- 高次元統計学(high-dimensional statistics)で考えられている問題
+- 高次元統計学 (high-dimensional statistics) で考えられている問題
   - この文脈では計算困難性の仮定のスタート地点（NP困難性におけるSATの立ち位置）
 
 - 論文：Planted Clique Conjectures are Equivalent
@@ -394,7 +389,7 @@ color: amber-light
 
 ::title::
 
-# ランダムな入力上での計算量（平均時計算量）
+# ランダムな入力上での計算量（平均時計算量）の起点
 
 ::content::
 
@@ -741,9 +736,13 @@ $\Downarrow$
 
 </div>
 
+<v-click>
+
 - アドバンテージを**増幅**させればよい
   - アドバンテージ $\frac{k^2}{n}\cdot n^\varepsilon$で解ける $\Rightarrow$ アドバンテージ $1-\frac{1}{10n}$ で解ける
 - $\mathsf{Shrink}$ によってこの増幅が可能
+
+</v-click>
 
 ---
 layout: top-title
