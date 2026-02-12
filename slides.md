@@ -90,7 +90,7 @@ color: amber-light
 ::content::
 
 - 高次元統計学 (high-dimensional statistics) で考えられている問題
-  - この文脈では計算困難性の仮定のスタート地点（NP困難性におけるSATの立ち位置）
+  - 多くの問題の計算困難性の仮定のスタート地点（NP困難性におけるSATの立ち位置）
 
 - 論文：Planted Clique Conjectures are Equivalent
 
