@@ -69,7 +69,7 @@ color: amber-light
 
 ::content::
 
-清水 伸高
+[清水 伸高](https://sites.google.com/view/nobutaka-shimizu/home)
 - 分野：計算量理論
 - 知ってること：
   - **平均時計算量（ランダムなインスタンスの計算量）**
