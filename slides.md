@@ -71,7 +71,7 @@ color: amber-light
 
 [清水 伸高](https://sites.google.com/view/nobutaka-shimizu/home)
 - 分野：計算量理論
-- 知ってること：
+- ちょっと分かること：
   - **平均時計算量（ランダムなインスタンスの計算量）**
   - （高次元）エクスパンダー（東北大数学科での[集中講義](https://nobutakashimizu.github.io/lecture_May2024/main.pdf)）
   - PCP定理 (RIMSで[集中講義](https://nobutakashimizu.github.io/PCP_lecture_2025/main.pdf))
